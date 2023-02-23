@@ -1,10 +1,9 @@
-import os
-os.system("clear") #replit e su LINUX / ("cls") per WINDOWS
+
+
+my_file = open('shampoo_sales.txt', 'r')
+
 
 dati=[]
-my_file = open('lista_invitati.txt', 'r')
-for line in my_file:
-    splittata = line.split(' ')
-    dati.append(splittata)
-print(dati)
-
+riga = my_file.split('\n')
+for line in range(5):
+    print(riga[line])
